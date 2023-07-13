@@ -125,10 +125,6 @@ export default class BrowserWalletStrategy implements Strategy {
     return await this.callWindowApi("getActivePublicKey");
   }
 
-  public async addToken(id: string): Promise<void> {
-    throw new Error("Not implemented");
-  }
-
   public async dispatch(transaction: Transaction): Promise<DispatchResult> {
     return await this.callWindowApi("dispatch", [transaction]);
   }
