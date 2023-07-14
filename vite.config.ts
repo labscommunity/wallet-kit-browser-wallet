@@ -12,6 +12,9 @@ export default defineConfig({
       name: "@arweave-wallet-kit/browser-wallet-strategy",
       formats: ["es", "umd"],
       fileName: (format) => `index.${format}.js`
+    },
+    rollupOptions: {
+      external: ["@arweave-wallet-kit/core"]
     }
   }
 });
