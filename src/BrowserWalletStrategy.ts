@@ -1,7 +1,7 @@
 import { AppInfo, callWindowApi, DispatchResult, GatewayConfig, PermissionType } from "@arweave-wallet-kit/core/wallet";
-import type { SignatureOptions } from "arweave/node/lib/crypto/crypto-interface";
+import type { SignatureOptions } from "arweave/web/lib/crypto/crypto-interface";
 import type { Strategy } from "@arweave-wallet-kit/core/strategy";
-import type Transaction from "arweave/node/lib/transaction";
+import type Transaction from "arweave/web/lib/transaction";
 
 /**
  * Any kind of browser wallet, with an
